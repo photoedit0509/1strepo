@@ -16,30 +16,52 @@ import SwiftUI
 
 struct LabelView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-                .background(.yellow)
-                .font(.system(size: 28, weight: .bold))
-                .foregroundColor(.red)
-        }
         ZStack {
             Color.blue.ignoresSafeArea()
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+                    .background(.yellow)
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(.red)
+            }
+            .padding()
         }
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//                .background(.yellow)
-//                .font(.system(size: 28, weight: .bold))
-//                .foregroundColor(.red)
-//        }
-        .padding()
+        .onAppear {
+ //           dataTypes()
+        }
     }
-}
+    
+    
+//    func dataTypes() {
+//        print("test")
+//        
+//        let fruits: [String] = ["Apple", "Banana", "Orange"]
+//        let numbers = [1, 2, 3, 4]
+//        
+//        var names: [String] = ["Vineela", "Arjun"]
+//        
+//        print(names)
+//        
+//        names.append("Thiru")
+//        names.append("Aarna")
+//        
+//        print(names)
+//
+//
+//        
+//        print(fruits.count)
+//        print(fruits.isEmpty)
+//        print(fruits[0])
+//        print(fruits[2])
+
+
+        
+
+        
+    }
 
 #Preview {
     LabelView()

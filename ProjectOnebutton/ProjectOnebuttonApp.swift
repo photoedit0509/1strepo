@@ -11,7 +11,9 @@ import SwiftUI
 struct ProjectOnebuttonApp: App {
     var body: some Scene {
         WindowGroup {
-            LabelView()
+        NavigationStack {
+            FeedbackFormView()
+            }
         }
     }
 }
